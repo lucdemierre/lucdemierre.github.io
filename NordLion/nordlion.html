@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NordLion International</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+        :root {
+            --gulf-orange: #f46f30;
+            --gulf-blue: #73c2fb;
+            --gulf-dark: #2d2d2d;
+            --gulf-light-grey: #cccccc;
+            --gulf-lighter-blue: #a5e1ff;
+        }
+
+        body {
+            background-color: var(--gulf-dark);
+            color: var(--gulf-blue);
+            font-family: 'Garamond', sans-serif;
+            line-height: 1.6;
+            overflow-x: hidden; 
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: var(--gulf-dark);
+            padding: 10px 0;
+            z-index: 10;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo img {
+            width: 80px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links li a {
+            text-decoration: none;
+            color: var(--gulf-lighter-blue);
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .nav-links li a:hover {
+            color: var(--gulf-orange);
+        }
+
+        .intro-section {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .intro-section h1 {
+            position: absolute;
+            height: 20vh;
+            color: var(--gulf-orange);
+            font-size: 80px;
+            font-weight: 700;
+            z-index: 2;
+        }
+
+        .intro-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        .featured-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            z-index: 0;
+        }
+
+        #cars {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        #cars h2 {
+            color: var(--gulf-orange);
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        #cars p {
+            color: var(--gulf-light-grey);
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: var(--gulf-orange);
+            color: var(--gulf-dark);
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: var(--gulf-light-grey);
+            color: var(--gulf-orange);
+        }
+
+        .stock-gallery {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .stock-gallery img {
+            width: 30%;
+            border: 2px solid var(--gulf-light-grey);
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .stock-gallery img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="IMG_9016-removebg-preview.png" alt="NordLion Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#cars">Cars</a></li>
+                <li><a href="#jets">Jets</a></li>
+                <li><a href="#about us">About Us</a></li>
+                <li><a href="#meet the team">Meet the Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="intro-section">
+        <h1>NordLion International</h1>
+        <img src="Wallpaper-134.jpg" alt="Pagani Zonda REVO Barchetta" class="featured-image">
+    </section>
+
+    <section id="cars">
+        <h2>Portfolio</h2>
+        <button>View All</button>
+        <div class="stock-gallery">
+            <img src="pagani-zonda.jpg" alt="Pagani Huayra">
+            <img src="maserati-mc12.jpg" alt="Lamborghini Veneno">
+            <img src="huayra-bc-roadster.jpg" alt="Pagani Zonda R">
+        </div>
+    </section>
+    <section id="Our Heritage" class="about-us-section">
+        <h1>Our Heritage</h1>
+        <p>Our name is derived from the sides of the both the founder's backgrounds. Nord to symbolise the Nordic region, where Eliel is from, and Lion to symbolise Lion City, or Singapore which is where Luc is from.</p>
+    </section>
+</body>
+
+</html>
