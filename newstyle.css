@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6 {
     position: relative; /* Ensure the overlay and content are positioned correctly */
     overflow: hidden; /* Keep elements within the jumbotron */
     height: 100vh; /* Set the height to 92% of the viewport */
-    background: url('1240042.jpg') no-repeat center center;
+    background: url('Photos/1240042.jpg') no-repeat center center;
     background-size: cover;
 }
 
@@ -251,7 +251,6 @@ a:hover {
 }
 
 .gallery-item {
-    border: 2px solid var(--secondary-color);
     border-radius: 8px;
     overflow: hidden;
     display: flex;
