@@ -1,0 +1,61 @@
+:root {
+    --primary-color: black;
+    --secondary-color: #d4af37; /* Gold */
+    --tertiary-color: #0a0a5e; /* Dark blue */
+    --contrast-color: white;
+}
+
+/* Apply the primary and contrast colors globally */
+body {
+    background-color: var(--primary-color);
+    color: var(--contrast-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'EB Garamond', serif;
+    color: var(--secondary-color);
+}
+
+/* Navbar Link Colors */
+.navbar-nav .nav-link {
+    color: var(--secondary-color);
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--contrast-color);
+}
+
+/* Jumbotron */
+.bg-image {
+    position: relative;
+}
+
+.bg-image .container {
+    backdrop-filter: blur(10px);
+}
+
+/* Custom button styling */
+.btn-custom {
+    background-color: var(--tertiary-color);
+    color: var(--contrast-color);
+}
+
+.btn-custom:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+}
+
+.footer h4, .footer h5 {
+    color: var(--secondary-color);
+}
+
+.footer p {
+    color: var(--contrast-color);
+}

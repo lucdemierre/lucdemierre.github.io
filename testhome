@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James Bond 007 Museum</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="007-Logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="home.html" class="logo-link"></a>
+                <img src="007-Logo.png" alt="007 Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="photos.html">Photos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="intro-section">
+        <h1>James Bond 007 Museum</h1>
+        <img src="1240042.jpg" alt="007" class="featured-image">
+    </section>
+
+    <section id="about-us">
+        <h1>About Us</h1>
+        <h3>This week there has been a lot of talk about who will be the next James Bond. Gunnar Schäfer who runs the 007 Museum in Nybro and has been described as Sweden's own James Bond, participates in the program of the 007 Museum in the Kingdom of Glass.</h3>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-item center-item">
+                <h1>James Bond 007 Museum</h1>
+            </div>
+            <div class="footer-item">
+                <h3>Contact Us (Bookings only)</h3>
+                <p>007museum@telia.com</p>
+                <p>+46 0734477007</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
