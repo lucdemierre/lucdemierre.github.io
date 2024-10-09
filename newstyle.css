@@ -322,3 +322,57 @@ footer {
     margin-bottom: 5px;
 }
 
+
+/* Remove default outline and add custom animation for input fields */
+.form-control {
+    background-color: transparent;
+    color: var(--contrast-color);
+    border: 2px solid var(--secondary-color);
+    border-radius: 4px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-control:focus {
+    border-color: var(--tertiary-color);
+    outline: none; /* Remove the default outline */
+    box-shadow: 0 0 8px rgba(10, 10, 94, 0.5); /* Add a subtle shadow when focused */
+}
+
+.btn-custom {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+    background-color: var(--tertiary-color);
+    color: var(--contrast-color);
+    border: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-custom:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Card animation */
+.card {
+    border: none;
+    border-radius: 8px;
+    background-color: var(--primary-color);
+    color: var(--contrast-color);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Add animation to labels */
+.form-label {
+    font-family: 'Nunito', sans-serif;
+    color: var(--contrast-color);
+    transition: transform 0.3s, color 0.3s;
+}
+
+/* When input is focused, label animates */
+.form-control:focus + .form-label, 
+.form-control:valid + .form-label {
+    color: var(--tertiary-color);
+    transform: scale(1.1);
+}
